@@ -1,0 +1,1461 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>汉字拼音处理 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../tools/security.html" />
+    
+    
+    <link rel="prev" href="../tools/share.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="6.4"
+        data-chapter-title="汉字拼音处理"
+        data-filepath="tools/pinyin.md"
+        data-basepath=".."
+        data-revision="Tue Dec 01 2015 21:52:19 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 接入指南</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="appendix/install_sdk.html">
+            
+                
+                    <a href="../appendix/install_sdk.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        安装SDK
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="appendix/project_config.html">
+            
+                
+                    <a href="../appendix/project_config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        配置Xcode工程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="appendix/env.html">
+            
+                
+                    <a href="../appendix/env.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        实现mPaasAppInterface
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="appendix/settings.html">
+            
+                
+                    <a href="../appendix/settings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        使用系统设置服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="appendix/tutorial.html">
+            
+                
+                    <a href="../appendix/tutorial.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        搭建一个完整Demo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="appendix/attach.html">
+            
+                
+                    <a href="../appendix/attach.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 客户端框架</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="framework/summary.html">
+            
+                
+                    <a href="../framework/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="framework/basic.html">
+            
+                
+                    <a href="../framework/basic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        基础术语
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="framework/quick_start.html">
+            
+                
+                    <a href="../framework/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        快速开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="framework/avanced.html">
+            
+                
+                    <a href="../framework/avanced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        进阶指南
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="framework/faq.html">
+            
+                
+                    <a href="../framework/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        常见问题
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="framework/release_note.html">
+            
+                
+                    <a href="../framework/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        发布记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="framework/appendix.html">
+            
+                
+                    <a href="../framework/appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 客户端框架</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="remotelogging/summary.html">
+            
+                
+                    <a href="../remotelogging/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="remotelogging/basic.html">
+            
+                
+                    <a href="../remotelogging/basic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        基础术语
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="remotelogging/quick_start.html">
+            
+                
+                    <a href="../remotelogging/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        快速开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="remotelogging/avanced.html">
+            
+                
+                    <a href="../remotelogging/avanced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        进阶指南
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="remotelogging/faq.html">
+            
+                
+                    <a href="../remotelogging/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        常见问题
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="remotelogging/release_note.html">
+            
+                
+                    <a href="../remotelogging/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        发布记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="remotelogging/appendix.html">
+            
+                
+                    <a href="../remotelogging/appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 基础通信</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" >
+            
+            <span><b>4.1.</b> RPC</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="net_con/rpc/summary.html">
+            
+                
+                    <a href="../net_con/rpc/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="net_con/rpc/term.html">
+            
+                
+                    <a href="../net_con/rpc/term.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        基础术语
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="net_con/rpc/quick_start.html">
+            
+                
+                    <a href="../net_con/rpc/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        快速开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="net_con/rpc/avanced.html">
+            
+                
+                    <a href="../net_con/rpc/avanced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.4.</b>
+                        
+                        进阶指南
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="net_con/rpc/faq.html">
+            
+                
+                    <a href="../net_con/rpc/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.5.</b>
+                        
+                        常见问题
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="net_con/rpc/release_note.html">
+            
+                
+                    <a href="../net_con/rpc/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.6.</b>
+                        
+                        发布记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="net_con/rpc/appendix.html">
+            
+                
+                    <a href="../net_con/rpc/appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.7.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="net_con/APNS.html">
+            
+                
+                    <a href="../net_con/APNS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        APNS
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 通用服务</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="common_service/hotpatch.html">
+            
+                
+                    <a href="../common_service/hotpatch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Hotpatch
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="common_service/config.html">
+            
+                
+                    <a href="../common_service/config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        配置服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="common_service/badge.html">
+            
+                
+                    <a href="../common_service/badge.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        红点提醒
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="common_service/feedback.html">
+            
+                
+                    <a href="../common_service/feedback.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        用户反馈
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="common_service/file_transfer.html">
+            
+                
+                    <a href="../common_service/file_transfer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        文件上传下载
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="common_service/update.html">
+            
+                
+                    <a href="../common_service/update.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        检查更新
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 工具组件集</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" >
+            
+            <span><b>6.1.</b> 统一存储</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="tools/data_center/summary.html">
+            
+                
+                    <a href="../tools/data_center/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" >
+            
+            <span><b>6.1.2.</b> 功能模块</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.1" data-path="tools/data_center/functions/apdatacenter.html">
+            
+                
+                    <a href="../tools/data_center/functions/apdatacenter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.1.</b>
+                        
+                        APDataCenter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.2" data-path="tools/data_center/functions/key_value.html">
+            
+                
+                    <a href="../tools/data_center/functions/key_value.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.2.</b>
+                        
+                        Key-Value存储
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3" >
+            
+            <span><b>6.1.2.3.</b> DAO</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.3.1" data-path="tools/data_center/functions/DAO/summary.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.2" data-path="tools/data_center/functions/DAO/keyword.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/keyword.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.2.</b>
+                        
+                        关键字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.3" data-path="tools/data_center/functions/DAO/reference.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.3.</b>
+                        
+                        引用方式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.4" data-path="tools/data_center/functions/DAO/proxy.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.4.</b>
+                        
+                        DAO代理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.5" data-path="tools/data_center/functions/DAO/transaction.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/transaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.5.</b>
+                        
+                        事务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.6" data-path="tools/data_center/functions/DAO/overload.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/overload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.6.</b>
+                        
+                        函数重载
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.7" data-path="tools/data_center/functions/DAO/select_parallel.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/select_parallel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.7.</b>
+                        
+                        并行select
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.8" data-path="tools/data_center/functions/DAO/quick_style.html">
+            
+                
+                    <a href="../tools/data_center/functions/DAO/quick_style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.8.</b>
+                        
+                        高级语法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="tools/audio.html">
+            
+                
+                    <a href="../tools/audio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        音频录制播放
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="tools/share.html">
+            
+                
+                    <a href="../tools/share.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        分享组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.4" data-path="tools/pinyin.html">
+            
+                
+                    <a href="../tools/pinyin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        汉字拼音处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="tools/security.html">
+            
+                
+                    <a href="../tools/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        iOS安全检测组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="tools/h5service.html">
+            
+                
+                    <a href="../tools/h5service.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        H5容器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" >
+            
+            <span><b>6.7.</b> 通用控件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7.1" data-path="tools/ui/UI.html">
+            
+                
+                    <a href="../tools/ui/UI.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.1.</b>
+                        
+                        控件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2" >
+            
+            <span><b>6.7.2.</b> UI样式描述文件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7.2.1" data-path="tools/ui/theme/config.html">
+            
+                
+                    <a href="../tools/ui/theme/config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.2.1.</b>
+                        
+                        描述文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2.2" data-path="tools/ui/theme/theme.html">
+            
+                
+                    <a href="../tools/ui/theme/theme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.2.2.</b>
+                        
+                        自定义主题
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2.3" data-path="tools/ui/theme/APNavigationBar.html">
+            
+                
+                    <a href="../tools/ui/theme/APNavigationBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.2.3.</b>
+                        
+                        APNavigationBar
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.3" data-path="tools/ui/icon_font.html">
+            
+                
+                    <a href="../tools/ui/icon_font.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.3.</b>
+                        
+                        IconFont
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="tools/SonicWave.html">
+            
+                
+                    <a href="../tools/SonicWave.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        声波通讯组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="tools/multi-language.html">
+            
+                
+                    <a href="../tools/multi-language.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        多语言组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="tools/scan.html">
+            
+                
+                    <a href="../tools/scan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        扫码组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 开发者工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="dev_tools/summary.html">
+            
+                
+                    <a href="../dev_tools/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="dev_tools/template.html">
+            
+                
+                    <a href="../dev_tools/template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Xcode工程模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="dev_tools/file_template.html">
+            
+                
+                    <a href="../dev_tools/file_template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Xcode文件模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="dev_tools/plugins.html">
+            
+                
+                    <a href="../dev_tools/plugins.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Xcode插件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="dev_tools/console.html">
+            
+                
+                    <a href="../dev_tools/console.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        命令行工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="dev_tools/release_note.html">
+            
+                
+                    <a href="../dev_tools/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        发布记录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="open_source.html">
+            
+                
+                    <a href="../open_source.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        附录
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>@cnName &#x6C49;&#x5B57;&#x62FC;&#x97F3;&#x5904;&#x7406;
+@priority 4</p>
+<h1 id="&#x6C49;&#x5B57;&#x62FC;&#x97F3;&#x5904;&#x7406;">&#x6C49;&#x5B57;&#x62FC;&#x97F3;&#x5904;&#x7406;</h1>
+<p>[TOC]</p>
+<h2 id="1-&#x7B80;&#x4ECB;">1 &#x7B80;&#x4ECB;</h2>
+<p>&#x6C49;&#x5B57;&#x62FC;&#x97F3;&#x5904;&#x7406;&#x662F;&#x6BD4;&#x8F83;&#x7E41;&#x7410;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x79FB;&#x52A8;&#x6846;&#x67B6;&#x4E3A;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4F9B;&#x7684;&#x6C49;&#x5B57;&#x62FC;&#x97F3;&#x5904;&#x7406;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x7B80;&#x5316;&#x5F00;&#x53D1;&#x8005;&#x5728; iOS &#x5E94;&#x7528;&#x4E0A;&#x7684;&#x5904;&#x7406;&#x96BE;&#x5EA6;&#xFF0C;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#x7279;&#x70B9;&#xFF1A;</p>
+<p>&#xFF08;1&#xFF09;<code>&#x6C49;&#x5B57;&#x8F6C;&#x62FC;&#x97F3;</code> </p>
+<ul>
+<li>&#x6839;&#x636E;&#x6C49;&#x5B57;&#x7684; Unicode &#x7801;&#x76F4;&#x63A5;&#x53D6;&#x51FA;&#x6C49;&#x5B57;&#x7684;&#x62FC;&#x97F3; </li>
+</ul>
+<p>&#xFF08;2&#xFF09;<code>&#x641C;&#x7D22;&#x529F;&#x80FD;</code></p>
+<ul>
+<li>&#x652F;&#x6301; 2 &#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x641C;&#x7D22;&#xFF0C;&#x5176;&#x4E2D;&#x4E3B;&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x62FC;&#x97F3;&#xFF0C;&#x591A;&#x97F3;&#x5B57;&#x641C;&#x7D22;&#xFF0C;&#x526F;&#x5B57;&#x6BB5;&#x6309;&#x5B57;&#x7B26;&#x4E32;&#x5339;&#x914D;&#x641C;&#x7D22;&#x3002;</li>
+<li>&#x641C;&#x7D22;&#x7ED3;&#x679C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E3B;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x6570;&#x636E;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x5339;&#x914D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x526F;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x6570;&#x636E;&#x7684;&#x7D22;&#x5F15;&#xFF0C;2 &#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x5339;&#x914D;&#x6570;&#x636E;&#x4E0D;&#x91CD;&#x590D;&#x3002;</li>
+<li>&#x5EFA;&#x7D22;&#x5F15;&#x4E0E;&#x641C;&#x7D22;&#x901F;&#x5EA6;&#x5FEB;&#x3002;</li>
+</ul>
+<h2 id="2-&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">2 &#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h2>
+<h3 id="21-&#x6C49;&#x5B57;&#x8F6C;&#x62FC;&#x97F3;">2.1 &#x6C49;&#x5B57;&#x8F6C;&#x62FC;&#x97F3;</h3>
+<p>&#x8C03;&#x7528;<code>APPinyinSearchManager</code>&#x7684;&#x7C7B;&#x65B9;&#x6CD5;</p>
+<pre><code>/**
+ @brief &#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x62FC;&#x97F3;&#x4E32;
+ @param text: &#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+ @return &#x8FD4;&#x56DE;&#x62FC;&#x97F3;&#x4E32;
+ */
++ (NSString *)getPinYinWithText:(NSString *)text;
+</code></pre><h3 id="22-&#x641C;&#x7D22;&#x529F;&#x80FD;">2.2 &#x641C;&#x7D22;&#x529F;&#x80FD;</h3>
+<h4 id="221-&#x7EC4;&#x7EC7;&#x6570;&#x636E;">2.2.1 &#x7EC4;&#x7EC7;&#x6570;&#x636E;</h4>
+<p>&#x5F85;&#x641C;&#x7D22;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x641C;&#x7D22;&#x6570;&#x636E;&#x534F;&#x8BAE;&#xFF0C;&#x5B9A;&#x4E49;&#x641C;&#x7D22;&#x7684;&#x4E3B;&#x5B57;&#x6BB5;&#x548C;&#x526F;&#x5B57;&#x6BB5;</p>
+<pre><code>@protocol APPinyinSearchDataProtocol &lt;NSObject&gt;
+@required
+- (NSString *)primarySearchData;    //&#x641C;&#x7D22;&#x4E3B;&#x5B57;&#x6BB5;
+@optional
+- (NSString *)secondarySearchData;  //&#x641C;&#x7D22;&#x526F;&#x5B57;&#x6BB5;
+@end
+</code></pre><h4 id="222-&#x521B;&#x5EFA;&#x641C;&#x7D22;&#x7D22;&#x5F15;">2.2.2 &#x521B;&#x5EFA;&#x641C;&#x7D22;&#x7D22;&#x5F15;</h4>
+<p>&#x8C03;&#x7528;&#x8005;&#x521B;&#x5EFA;&#x5E76;&#x6301;&#x6709;<code>APPinyinSearchManager</code>&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x3002;&#x5C06;&#x7EC4;&#x7EC7;&#x597D;&#x7684;&#x6570;&#x636E;&#x4F20;&#x5165;<code>APPinyinSearchManager</code>&#x7684;&#x5BF9;&#x8C61;&#x6765;&#x521B;&#x5EFA;&#x7D22;&#x5F15;&#xFF0C;&#x652F;&#x6301;&#x4E0B;&#x9762; 2 &#x79CD;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x641C;&#x7D22;&#x7D22;&#x5F15;&#xFF1A;</p>
+<ol>
+<li>Manager &#x4E0D;&#x4F1A;&#x6301;&#x6709;&#x4F20;&#x5165;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x4F1A;&#x6301;&#x6709;&#x6570;&#x636E;&#x5728;&#x539F;&#x59CB; Dict&#xFF0C;Array &#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E3B;&#x526F;&#x5B57;&#x6BB5;&#x3002;</li>
+<li>&#x5BF9;&#x4E00;&#x4E2A; Manager &#x8C03;&#x7528; buildIndex &#x65B9;&#x6CD5;&#x65F6;&#x4F1A;&#x8986;&#x76D6;&#x539F;&#x6765;&#x7684;&#x641C;&#x7D22;&#x7D22;&#x5F15;&#xFF0C;&#x4F20;&#x7A7A;&#x65F6;&#x4F1A;&#x91CD;&#x7F6E;&#x641C;&#x7D22;&#x7D22;&#x5F15;&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A; Manager &#x5B9E;&#x4F8B;&#x6765;&#x641C;&#x7D22;&#x4E0D;&#x540C;&#x7EF4;&#x5EA6;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#xFF0C;&#x4F1A;&#x5728;&#x7D22;&#x5F15;&#x5B8C;&#x6210;&#x540E;&#x81EA;&#x52A8;&#x641C;&#x7D22;&#x5E76;&#x56DE;&#x8C03;&#x3002;</li>
+</ol>
+<pre><code>/**
+ @brief &#x5EFA;&#x7ACB;&#x641C;&#x7D22;&#x7D22;&#x5F15;
+ @param dict: &#x5B9E;&#x73B0;&#x534F;&#x8BAE;&#x7684;&#x6570;&#x636E;  (Ex: {A:[contact1,contact2,contact3], B:[contact4,contact5]})
+ @param indexChar: &#x6570;&#x636E; Dictionary &#x7684;&#x6709;&#x5E8F; keys,&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x7684;&#x4F18;&#x5148;&#x7EA7; Ex:[A,B]
+ */
+- (void)buildSearchIndexWithDataDict:(NSDictionary *)dict indexChar:(NSArray *)indexChar;
+
+/**
+ @brief &#x5EFA;&#x7ACB;&#x641C;&#x7D22;&#x7D22;&#x5F15;
+ @param array: &#x6570;&#x636E; Array Ex:[contact1,contact2,contact3]
+ */
+- (void)buildSearchIndexWithDataArray:(NSArray *)array;
+</code></pre><h4 id="223-&#x641C;&#x7D22;">2.2.3 &#x641C;&#x7D22;</h4>
+<p>&#x5982;&#x679C;&#x8C03;&#x7528;&#x641C;&#x7D22;&#x65F6;&#x6B63;&#x5728;&#x521B;&#x5EFA;&#x641C;&#x7D22;&#x7D22;&#x5F15;&#xFF0C;<code>APPinyinSearchManager</code>&#x4F1A;&#x5728;&#x7D22;&#x5F15;&#x5EFA;&#x7ACB;&#x597D;&#x540E;&#x987A;&#x5E8F;&#x641C;&#x7D22;&#x5E76;&#x56DE;&#x8C03;&#x3002;</p>
+<pre><code>/**
+ @brief &#x641C;&#x7D22;&#x6570;&#x636E;,&#x4F18;&#x5148;&#x4E3B;&#x5B57;&#x6BB5;&#xFF0C;&#x4E3B;&#x5B57;&#x6BB5;&#x62FC;&#x97F3;&#x5339;&#x914D;&#xFF0C;&#x4E3B;&#x526F;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x6570;&#x636E;&#x4E0D;&#x91CD;&#x590D;
+ @param searchText: &#x641C;&#x7D22;&#x4E32;
+ @param owner: &#x8C03;&#x7528;&#x7684; owner, &#x4E00;&#x822C;&#x4F20;&#x5165; self&#xFF0C;&#x4E3A;&#x53D6;&#x6D88;&#x641C;&#x7D22;&#x4F7F;&#x7528;
+ @param callBack: &#x641C;&#x7D22;&#x7ED3;&#x679C;&#x7684;&#x56DE;&#x8C03;
+ */
+- (void)search:(NSString*)searchText owner:(id)owner completionBlock:(APSearchCallback)callback;
+</code></pre><h4 id="224-&#x8FD4;&#x56DE;&#x641C;&#x7D22;&#x7ED3;&#x679C;">2.2.4 &#x8FD4;&#x56DE;&#x641C;&#x7D22;&#x7ED3;&#x679C;</h4>
+<p>&#x641C;&#x7D22;&#x7ED3;&#x679C;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570; Block &#x8FD4;&#x56DE;</p>
+<pre><code>/**
+ @brief &#x641C;&#x7D22;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x56DE;&#x8C03;
+ @param searchText: &#x641C;&#x7D22;&#x4E32;
+ @param primaryMatchArrayWithPosition: &#x4E3B;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x51FA;&#x6765;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x662F; APSearchPosition
+ @param secondaryMatchArray: &#x526F;&#x5B57;&#x6BB5;&#x7684;&#x5339;&#x914D;&#x51FA;&#x6765;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x662F; NSIndexPath
+ @param error:&#x9884;&#x7559;&#x9519;&#x8BEF;&#x5B57;&#x6BB5;
+ */
+typedef void (^ APPinyinSearchCallback) (NSString * searchText, NSMutableArray * primaryMatchArrayWithPosition, NSMutableArray * secondaryMatchArray ,NSError * error);
+</code></pre><p>&#x5176;&#x4E2D;<code>primaryMatchArrayWithPosition</code>&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5982;&#x4E0B;</p>
+<pre><code>@interface APPinyinSearchPosition : NSObject
+/**
+ @brief &#x540D;&#x79F0;&#x5339;&#x914D;&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;
+ */
+@property (nonatomic, assign) int matchStart;
+/**
+ @brief &#x540D;&#x79F0;&#x5339;&#x914D;&#x7ED3;&#x675F;&#x7684;&#x4F4D;&#x7F6E;
+ */
+@property (nonatomic, assign) int matchEnd;
+/**
+ @brief &#x662F;&#x5426;&#x662F;&#x5168;&#x62FC;&#x5339;&#x914D;
+ */
+@property (nonatomic, assign) BOOL matchAllInPy;
+/**
+ @brief &#x662F;&#x5426;&#x662F;&#x6240;&#x6709; word &#x5339;&#x914D;
+ */
+@property (nonatomic, assign) BOOL matchAllInWord;
+/**
+ @brief &#x641C;&#x7D22;&#x6570;&#x636E;&#x5BF9;&#x5E94; IndexPath&#x3002;
+     &#x5982;&#x679C;&#x662F;&#x5B57;&#x5178;&#xFF0C;&#x5BF9;&#x5E94; section:key &#x7684;&#x4F4D;&#x7F6E;&#xFF0C;row &#x662F;&#x6570;&#x636E;&#x5728; value &#x7684;&#x4F4D;&#x7F6E;&#x3002;
+     &#x5982;&#x679C;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x5BF9;&#x5E94; section:0, row &#x662F;&#x6570;&#x636E;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;
+ */
+@property (nonatomic, retain) NSIndexPath * indexPath;
+</code></pre><p>&#x8C03;&#x7528;&#x4EE3;&#x7801;&#x793A;&#x8303;</p>
+<pre><code>[self.contactSearchManager search:searchText owner:self completionBlock:^(NSString *searchText, NSMutableArray *primaryMatchArrayWithPosition, NSMutableArray *secondaryMatchArray, NSError *error) {
+    if (weakSelf.isSearchMode &amp;&amp; [searchText isEqualToString:self.searchBar.text]) {
+        weakSelf.searchResultArray = [[NSMutableArray alloc] init];
+        //&#x627E;&#x5230;&#x4E3B;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x5230;&#x7684;&#x6570;&#x636E;
+        for (int i = 0; i &lt; [primaryMatchArrayWithPosition count]; i ++) {
+            APPinyinSearchPosition * position = [primaryMatchArrayWithPosition objectAtIndex:i];
+            NSIndexPath * indexPath = position.indexPath;
+            APContactInfo * contact = [weakSelf contactInfoInDataDictWithIndexPath:indexPath];
+            //&#x52A0;&#x5165;&#x7ED3;&#x679C;&#x6570;&#x7EC4;&#x4E2D;
+            [weakSelf.searchResultArray addObject:contact];
+        }
+        //&#x8BB0;&#x5F55;&#x4E3B;&#x5B57;&#x6BB5;&#x7684;&#x4F4D;&#x7F6E;&#x5339;&#x914D;&#x4FE1;&#x606F;
+        weakSelf.searchResultPositionArray = primaryMatchArrayWithPosition;
+        //&#x627E;&#x5230;&#x526F;&#x5B57;&#x6BB5;&#x7684;&#x5339;&#x914D;&#x7684;&#x6570;&#x636E;
+        for (int i = 0; i &lt; [secondaryMatchArray count]; i++) {
+            NSIndexPath * indexPath = [secondaryMatchArray objectAtIndex:i];
+            APContactInfo * contact = [self contactInfoInDataDictWithIndexPath:indexPath];
+            //&#x52A0;&#x5165;&#x7ED3;&#x679C;&#x6570;&#x7EC4;&#x4E2D;
+            [weakSelf.searchResultArray addObject:contact];
+        }
+        [weakSelf.tableView reloadData];
+    }
+}];
+</code></pre><h4 id="225-&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x5339;&#x914D;">2.2.5 &#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x5339;&#x914D;</h4>
+<p>&#x4F7F;&#x7528;<code>APPinyinSearchPosition</code>&#x6765;&#x5C55;&#x793A;&#x4E3B;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x4F4D;&#x7F6E;</p>
+<pre><code>if (self.nameSearchPostion) {
+    NSUInteger start = self.nameSearchPostion.matchStart;
+    NSUInteger end = self.nameSearchPostion.matchEnd;
+    if (self.contactInfo.displayName.length &gt; 0) {
+        isMatch = YES;
+        [self.contactNameLabel setText:self.contactInfo.displayName afterInheritingLabelAttributesAndConfiguringWithBlock:^ NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+            NSRange redRange = NSMakeRange(start, (end-start+1));
+            [mutableAttributedString addAttribute:(NSString *)kCTForegroundColorAttributeName value:(id)APC_Cell_detailLabel_highlightColor.CGColor range:redRange];
+            return mutableAttributedString;
+        }];
+    }
+}
+</code></pre><p>&#x5C55;&#x793A;&#x526F;&#x5B57;&#x6BB5;&#x5339;&#x914D;&#x7684;&#x4F4D;&#x7F6E;</p>
+<pre><code>__weak APContactTableViewCell * weakSelf = self;
+[self.detailLabel setText:detailString afterInheritingLabelAttributesAndConfiguringWithBlock:^ NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+    NSRange redRange = [detailString rangeOfString:weakSelf.searchText];
+    [mutableAttributedString addAttribute:(NSString *)kCTForegroundColorAttributeName value:(id)APC_Cell_detailLabel_highlightColor.CGColor range:redRange];
+    return mutableAttributedString;
+}];
+</code></pre><h4 id="226-&#x5176;&#x4ED6;&#x529F;&#x80FD;">2.2.6 &#x5176;&#x4ED6;&#x529F;&#x80FD;</h4>
+<pre><code>/**
+ @brief &#x91CD;&#x7F6E;&#x641C;&#x7D22;&#x7D22;&#x5F15;
+ */
+- (void)resetSearchTree;
+/**
+ @brief &#x53D6;&#x6D88;&#x54CD;&#x5E94;&#x641C;&#x7D22;&#x64CD;&#x4F5C;
+ @param owner: &#x641C;&#x7D22;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8005;
+ */
+- (void)cancelSearchForOwner:(id)owner;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../tools/share.html" class="navigation navigation-prev " aria-label="Previous page: 分享组件"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../tools/security.html" class="navigation navigation-next " aria-label="Next page: iOS安全检测组件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
