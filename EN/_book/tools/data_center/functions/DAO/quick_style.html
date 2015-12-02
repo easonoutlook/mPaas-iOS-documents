@@ -1,0 +1,1498 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>High-level syntax | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../../../tools/data_center/functions/LRU/lru_memory.html" />
+    
+    
+    <link rel="prev" href="../../../../tools/data_center/functions/DAO/select_parallel.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="6.1.2.3.8"
+        data-chapter-title="High-level syntax"
+        data-filepath="tools/data_center/functions/DAO/quick_style.md"
+        data-basepath="../../../.."
+        data-revision="Wed Dec 02 2015 11:24:01 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Guide of Access</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="appendix/install_sdk.html">
+            
+                
+                    <a href="../../../../appendix/install_sdk.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installing mPaaS SDK
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="appendix/project_config.html">
+            
+                
+                    <a href="../../../../appendix/project_config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Configuring Xcode Project
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="appendix/env.html">
+            
+                
+                    <a href="../../../../appendix/env.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Implementing mPaasAppInterface
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="appendix/settings.html">
+            
+                
+                    <a href="../../../../appendix/settings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Using Setting Service
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="appendix/tutorial.html">
+            
+                
+                    <a href="../../../../appendix/tutorial.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Building Complete Demo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="appendix/attach.html">
+            
+                
+                    <a href="../../../../appendix/attach.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Appendix
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Client framework</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="framework/summary.html">
+            
+                
+                    <a href="../../../../framework/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="framework/basic.html">
+            
+                
+                    <a href="../../../../framework/basic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Basic Terminologies
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="framework/quick_start.html">
+            
+                
+                    <a href="../../../../framework/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Quick Start
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="framework/avanced.html">
+            
+                
+                    <a href="../../../../framework/avanced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Guide to Advanced Features
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="framework/faq.html">
+            
+                
+                    <a href="../../../../framework/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        FAQs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="framework/release_note.html">
+            
+                
+                    <a href="../../../../framework/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Release History
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="framework/appendix.html">
+            
+                
+                    <a href="../../../../framework/appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Appendix
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> Client monitoring</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="remotelogging/summary.html">
+            
+                
+                    <a href="../../../../remotelogging/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="remotelogging/basic.html">
+            
+                
+                    <a href="../../../../remotelogging/basic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Basic Terminologies
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="remotelogging/quick_start.html">
+            
+                
+                    <a href="../../../../remotelogging/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Quick Start
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="remotelogging/avanced.html">
+            
+                
+                    <a href="../../../../remotelogging/avanced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Guide to Advanced Features
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="remotelogging/faq.html">
+            
+                
+                    <a href="../../../../remotelogging/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        FAQs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="remotelogging/release_note.html">
+            
+                
+                    <a href="../../../../remotelogging/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Release History
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="remotelogging/appendix.html">
+            
+                
+                    <a href="../../../../remotelogging/appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Appendix
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Basic Communication</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" >
+            
+            <span><b>4.1.</b> RPC</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="net_con/rpc/summary.html">
+            
+                
+                    <a href="../../../../net_con/rpc/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="net_con/rpc/term.html">
+            
+                
+                    <a href="../../../../net_con/rpc/term.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        Basic Terminologies
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="net_con/rpc/quick_start.html">
+            
+                
+                    <a href="../../../../net_con/rpc/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        Quick Start
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="net_con/rpc/avanced.html">
+            
+                
+                    <a href="../../../../net_con/rpc/avanced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.4.</b>
+                        
+                        Guide to Advanced Features
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="net_con/rpc/faq.html">
+            
+                
+                    <a href="../../../../net_con/rpc/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.5.</b>
+                        
+                        FAQs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="net_con/rpc/release_note.html">
+            
+                
+                    <a href="../../../../net_con/rpc/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.6.</b>
+                        
+                        Release History
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="net_con/rpc/appendix.html">
+            
+                
+                    <a href="../../../../net_con/rpc/appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.7.</b>
+                        
+                        Appendix
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="net_con/APNS.html">
+            
+                
+                    <a href="../../../../net_con/APNS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        APNS
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Generic Service</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="common_service/hotpatch.html">
+            
+                
+                    <a href="../../../../common_service/hotpatch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Hotpatch
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="common_service/config.html">
+            
+                
+                    <a href="../../../../common_service/config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Configuration Service
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="common_service/badge.html">
+            
+                
+                    <a href="../../../../common_service/badge.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Badge
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="common_service/feedback.html">
+            
+                
+                    <a href="../../../../common_service/feedback.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        User Feedback
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="common_service/file_transfer.html">
+            
+                
+                    <a href="../../../../common_service/file_transfer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        File Upload and Download
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="common_service/update.html">
+            
+                
+                    <a href="../../../../common_service/update.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Checking for Updates
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Tool Component Set</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" >
+            
+            <span><b>6.1.</b> Data Center</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="tools/data_center/summary.html">
+            
+                
+                    <a href="../../../../tools/data_center/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.1.</b>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" >
+            
+            <span><b>6.1.2.</b> Function Module</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.1" data-path="tools/data_center/functions/apdatacenter.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/apdatacenter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.1.</b>
+                        
+                        APDataCenter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.2" data-path="tools/data_center/functions/key_value.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/key_value.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.2.</b>
+                        
+                        Key-Value storage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3" >
+            
+            <span><b>6.1.2.3.</b> DAO</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.3.1" data-path="tools/data_center/functions/DAO/summary.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.1.</b>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.2" data-path="tools/data_center/functions/DAO/keyword.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/keyword.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.2.</b>
+                        
+                        Keywords
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.3" data-path="tools/data_center/functions/DAO/reference.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.3.</b>
+                        
+                        Reference
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.4" data-path="tools/data_center/functions/DAO/proxy.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.4.</b>
+                        
+                        DAO Proxy
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.5" data-path="tools/data_center/functions/DAO/transaction.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/transaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.5.</b>
+                        
+                        Transaction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.6" data-path="tools/data_center/functions/DAO/overload.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/overload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.6.</b>
+                        
+                        Function overloading
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.3.7" data-path="tools/data_center/functions/DAO/select_parallel.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/select_parallel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.7.</b>
+                        
+                        Concurrent SELECT operations
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.1.2.3.8" data-path="tools/data_center/functions/DAO/quick_style.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/DAO/quick_style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.3.8.</b>
+                        
+                        High-level syntax
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.4" >
+            
+            <span><b>6.1.2.4.</b> LRU</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.4.1" data-path="tools/data_center/functions/LRU/lru_memory.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/LRU/lru_memory.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.4.1.</b>
+                        
+                        APLRUMemoryCache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.4.2" data-path="tools/data_center/functions/LRU/lru_disk.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/LRU/lru_disk.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.4.2.</b>
+                        
+                        APLRUDiskCache
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.5" >
+            
+            <span><b>6.1.2.5.</b> Custom storage</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.5.1" data-path="tools/data_center/functions/custom_storage/summary.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/custom_storage/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.5.1.</b>
+                        
+                        APCustomStorage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.5.2" data-path="tools/data_center/functions/custom_storage/APAsyncFileArrayService.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/custom_storage/APAsyncFileArrayService.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.5.2.</b>
+                        
+                        APAsyncFileArrayService
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2.5.3" data-path="tools/data_center/functions/custom_storage/APObjectArrayService.html">
+            
+                
+                    <a href="../../../../tools/data_center/functions/custom_storage/APObjectArrayService.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.5.3.</b>
+                        
+                        APObjectArrayService
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="tools/data_center/faq.html">
+            
+                
+                    <a href="../../../../tools/data_center/faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.3.</b>
+                        
+                        FAQs
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="tools/audio.html">
+            
+                
+                    <a href="../../../../tools/audio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Audio Recording and Playback
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="tools/share.html">
+            
+                
+                    <a href="../../../../tools/share.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Sharing Component
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="tools/pinyin.html">
+            
+                
+                    <a href="../../../../tools/pinyin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Handling of Chinese Pinyin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="tools/security.html">
+            
+                
+                    <a href="../../../../tools/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        iOS APSecurityUtility
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="tools/h5service.html">
+            
+                
+                    <a href="../../../../tools/h5service.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        H5 Container
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" >
+            
+            <span><b>6.7.</b> Common control</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7.1" data-path="tools/ui/UI.html">
+            
+                
+                    <a href="../../../../tools/ui/UI.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.1.</b>
+                        
+                        UI Controls
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2" >
+            
+            <span><b>6.7.2.</b> UI Style Description File</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7.2.1" data-path="tools/ui/theme/config.html">
+            
+                
+                    <a href="../../../../tools/ui/theme/config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.2.1.</b>
+                        
+                        Description File
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2.2" data-path="tools/ui/theme/theme.html">
+            
+                
+                    <a href="../../../../tools/ui/theme/theme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.2.2.</b>
+                        
+                        Custom Theme
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2.3" data-path="tools/ui/theme/APNavigationBar.html">
+            
+                
+                    <a href="../../../../tools/ui/theme/APNavigationBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.2.3.</b>
+                        
+                        APNavigationBar
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.3" data-path="tools/ui/icon_font.html">
+            
+                
+                    <a href="../../../../tools/ui/icon_font.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.3.</b>
+                        
+                        IconFont
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="tools/SonicWave.html">
+            
+                
+                    <a href="../../../../tools/SonicWave.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        SonicWaveNFC Component
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="tools/multi-language.html">
+            
+                
+                    <a href="../../../../tools/multi-language.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        Multilingual Component
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="tools/scan.html">
+            
+                
+                    <a href="../../../../tools/scan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        Code Scan Component
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Developer Tools</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="dev_tools/summary.html">
+            
+                
+                    <a href="../../../../dev_tools/summary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="dev_tools/template.html">
+            
+                
+                    <a href="../../../../dev_tools/template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Xcode Project Template
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="dev_tools/file_template.html">
+            
+                
+                    <a href="../../../../dev_tools/file_template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Xcode File Template
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="dev_tools/plugins.html">
+            
+                
+                    <a href="../../../../dev_tools/plugins.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Xcode Plug-in
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="dev_tools/console.html">
+            
+                
+                    <a href="../../../../dev_tools/console.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Command Line Tools
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="dev_tools/release_note.html">
+            
+                
+                    <a href="../../../../dev_tools/release_note.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        Release History
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="open_source.html">
+            
+                
+                    <a href="../../../../open_source.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Appendix
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>@cnName 2.3.8 High-level syntax
+@priority 8</p>
+<h3 id="238-highlevel-syntax">2.3.8 High-level syntax</h3>
+<p>[TOC]</p>
+<h4 id="shortcut-syntax">Shortcut syntax</h4>
+<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">insert</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;addMessages&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;messages&quot;</span> <span class="hljs-attribute">foreach</span>=<span class="hljs-value">&quot;messages.model&quot;</span>&gt;</span>
+    insert or replace into ${T} (id, time, content, uin, read, date) values(#{model.msgId}, #{model.time}, #{model.content}, #{model.uin}, #{model.read}, #{model.date})
+<span class="hljs-tag">&lt;/<span class="hljs-title">insert</span>&gt;</span>
+</code></pre>
+<p>Taking the INSERT statement above for example, if many properties of the model object need to be inserted to the database, each property in the values will be written, which is both time- and effort-consuming. </p>
+<p>Here is another example. </p>
+<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">update</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;updateTemplate&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;template&quot;</span>&gt;</span>
+    update ${T} set data = #{template.data}, tag = #{template.tag} where tplId = #{template.id} and tplVersion = #{template.tplVersion}
+<span class="hljs-tag">&lt;/<span class="hljs-title">update</span>&gt;</span>
+</code></pre>
+<p>if many properties after the SET statement require to be updated, the SQL statements will be very complicated. </p>
+<p>The shortcut syntax can come in handy: </p>
+<pre><code class="lang-XML">%{&apos;#{model.*}&apos;, msgId, time, content, uin, read, date}
+
+is equivalent to
+
+#{model.msgId}, #{model.time}, #{model.content}, #{model.uin}, #{model.read}, #{model.date}
+</code></pre>
+<pre><code class="lang-XML">%{&apos;* = #{model.*}&apos;, data, tag, id, version}
+
+is equivalent to
+
+data = #{model.data}, tag = #{model.tag}, id = #{model.id}, version = #{model.version}
+</code></pre>
+<p>The basic format is: </p>
+<pre><code class="lang-XML">%{&apos;format&apos;, ...}
+</code></pre>
+<p>The first argument is bracketed by single quotes, indicating the format. Following it is the data to be formatted.  DAO will format each piece of data once and concatenate the data after DAO replaces the &#x201C;*&#x201D; in format with corresponding data. 
+Do not worry about the comprimising performance as this pre-processing will be executed only once. </p>
+<p>The two examples above can be modifed to: </p>
+<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">insert</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;addMessages&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;messages&quot;</span> <span class="hljs-attribute">foreach</span>=<span class="hljs-value">&quot;messages.model&quot;</span>&gt;</span>
+    insert or replace into ${T} (id, time, content, uin, read, date) values(%{&apos;#{model.*}&apos;, msgId, time, content, uin, read, date})
+<span class="hljs-tag">&lt;/<span class="hljs-title">insert</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">update</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;updateTemplate&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;template&quot;</span>&gt;</span>
+    update ${T} set %{&apos;* = #{template.*}&apos;, data, tag} where tplId = #{template.id} and tplVersion = #{template.tplVersion}
+<span class="hljs-tag">&lt;/<span class="hljs-title">update</span>&gt;</span>
+</code></pre>
+<h4 id="try-except">TRY EXCEPT</h4>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">insert</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;insertTemplates&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;templates&quot;</span> <span class="hljs-attribute">foreach</span>=<span class="hljs-value">&quot;templates.model&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">try</span>&gt;</span>
+        insert into ${T} (tplId, tplVersion, time, data, tag) values(%{&apos;#{model.*}&apos;, tplId, tplVersion, time, data, tag})
+        <span class="hljs-tag">&lt;<span class="hljs-title">except</span>&gt;</span>
+            update ${T} set %{&apos;* = #{model.*}&apos;, data, tag} where tplId = #{model.tplId} and tplVersion = #{model.tplVersion}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">except</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">try</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">insert</span>&gt;</span>
+</code></pre>
+<p>Sometimes the same model may be inserted into the database for multiple times. In this case, the INSERT or REPLACE statements will lead to the loss of old data when conflicts occur in the model primary key (Another model of the same primary key already exists in the database), and the data is re-inserted. This will lead to changes in the rowid of the same piece of data. (Usually you don&apos;t need to care about the rowid. But sometimes the rowid is required to be persistent throughout the entire life cycle of the database file.) The TRY EXCEPT statement block can solve the problem, among others. TRY EXCEPT statements can only be used in definitions of DAO methods and should have no preceding or following statements. Other statement blocks can be included inside the TRY and EXCEPT statements.</p>
+<p>During execution of this DAO method, if execution of the TRY statement fails, the execution will move to the EXCEPT statement automatically. Only when both of them fail will this DAO call return the failure result.</p>
+<h4 id="nonnil-argument">Non-nil argument</h4>
+<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">insert</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;addMessage&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;$ model&quot;</span>&gt;</span>
+    insert or replace into ${T} ${table_columns} values(#{model.msgId}, #{model.time}, #{model.content}, #{model.uin}, #{model.read}, #{model.date})
+<span class="hljs-tag">&lt;/<span class="hljs-title">insert</span>&gt;</span>
+</code></pre>
+<p>If an argument has a $ symbol at its beginning, it indicates that this argument does not accept the nil value. Calling DAO interfaces from the business layer allows nil arguments. But if an argument has a $ symbol at its beginning and the caller accidentally passes a nil value, the DAO call will fail automatically to prevent unexpected issues from happening.</p>
+<h4 id="conditional-formatting">Conditional formatting</h4>
+<p>Conditional formatting is akin to the foreach keyword. It will receive a dictionary argument, and format the k-v pairs in the dictionary into the format of &quot;k1=v1, k2=v2&quot;. </p>
+<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">insert</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;updateMessage&quot;</span> <span class="hljs-attribute">arguments</span>=<span class="hljs-value">&quot;values, conditions&quot;</span>&gt;</span>
+    update ${T} <span class="hljs-tag">&lt;<span class="hljs-title">format</span> <span class="hljs-attribute">prefix</span>=<span class="hljs-value">&quot;set&quot;</span> <span class="hljs-attribute">pairs</span>=<span class="hljs-value">&quot;values&quot;</span> <span class="hljs-attribute">join</span>=<span class="hljs-value">&quot;,&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">format</span> <span class="hljs-attribute">prefix</span>=<span class="hljs-value">&quot;where&quot;</span> <span class="hljs-attribute">pairs</span>=<span class="hljs-value">&quot;conditions&quot;</span> <span class="hljs-attribute">join</span>=<span class="hljs-value">&quot;and&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">insert</span>&gt;</span>
+</code></pre>
+<p>If the incoming values are @{@&quot;uin&quot;:@(12345), @&quot;content&quot;:@&quot;12345&quot;}, and the conditions are @{@&quot;id&quot;:@&quot;100&quot;}, </p>
+<p>SQL statements generated by this method are as follows: </p>
+<pre><code class="lang-SQL"><span class="hljs-operator"><span class="hljs-keyword">update</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">set</span> uin = ?, <span class="hljs-keyword">content</span> = ? <span class="hljs-keyword">where</span> <span class="hljs-keyword">id</span> = ?
+</span></code></pre>
+<p>and the @(12345), @&quot;12345&quot; and @&quot;100&quot; are bound to SQLite. </p>
+<p>&apos;[Attention]&apos; When a condition passes an empty value for pairs, the prefix argument will not be concatenated into the SQL statements either. </p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../../../tools/data_center/functions/DAO/select_parallel.html" class="navigation navigation-prev " aria-label="Previous page: Concurrent SELECT operations"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../../../tools/data_center/functions/LRU/lru_memory.html" class="navigation navigation-next " aria-label="Next page: APLRUMemoryCache"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../../../gitbook/app.js"></script>
+
+    
+    <script src="../../../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
