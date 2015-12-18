@@ -105,9 +105,19 @@ For example, the delegate method is:
 ```
 The “messages” is a MessageModel array. For every model in the messages, an SQL call will be executed so that elements in the array will be inserted to the database in one shot while the upper layer does not need to care about the loop call.  The underlying layer will merge the operation into one transaction to improve efficiency. 
 
-@step
-* In INSERT, UPDATE and DELETE methods, you may run into such a circumstance: To execute a DAO method, the SQL update operation is called for multiple times to execute multiple SQL statements.  For example, after a table is created, the user wants to create some indexes.  The statement between <step> in the function will be executed independently as one SQL update operation, and the underlying layer will merge all the operations into one transaction,  such as the createTable method in the figure above. 
+#### step
+```xml
+<upgrade toVersion='3.2'>
+    <step resumable="true">alter table ${T} add column1 text</step>
+    <step resumable="true">alter table ${T} add column2 text</step>
+</upgrade>
+```
+* In INSERT, UPDATE, DELETE and UPGRADE methods, you may run into such a circumstance: To execute a DAO method, the SQL update operation is called for multiple times to execute multiple SQL statements.  For example, after a table is created, the user wants to create some indexes.  The statement between <step> in the function will be executed independently as one SQL update operation, and the underlying layer will merge all the operations into one transaction,  such as the createTable method in the figure above. 
 * If the step clause exists in a function, no texts are allowed outside the step.  The step cannot contain another step. 
+
+@resumable
+
+* Indicates whether to continue executing the following steps if this one fails. Default is false, so that when executing sequentially, when error occurs in this step, the whole DAO method returns failure.
 
 #### map
 ```xml

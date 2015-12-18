@@ -64,6 +64,7 @@ This is the summary of mPaaS iOS Documents e-book.
                 * [APCustomStorage](tools/data_center/functions/custom_storage/summary.md)
                 * [文件阵列服务](tools/data_center/functions/custom_storage/APAsyncFileArrayService.md)
                 * [对象阵列服务](tools/data_center/functions/custom_storage/APObjectArrayService.md)
+            * [数据清理](tools/data_center/functions/clean.md)
         * [常见问题](tools/data_center/faq.md)
     * [音频录制播放](tools/audio.md)
     * [分享组件](tools/share.md)

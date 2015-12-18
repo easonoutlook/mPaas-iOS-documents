@@ -53,12 +53,15 @@
 
 - (void)setObject:(id)object forKey:(NSString*)key business:(NSString*)business;
 - (void)setObject:(id)object forKey:(NSString*)key business:(NSString*)business extension:(APDataCrypt*)extension;
+- (BOOL)setObject:(id)object forKey:(NSString*)key business:(NSString*)business extension:(APDataCrypt*)extension options:(APDataOptions)options;
 
 - (void)archiveObject:(id)object forKey:(NSString*)key business:(NSString*)business;
 - (void)archiveObject:(id)object forKey:(NSString*)key business:(NSString*)business extension:(APDataCrypt*)extension;
+- (BOOL)archiveObject:(id)object forKey:(NSString*)key business:(NSString*)business extension:(APDataCrypt*)extension options:(APDataOptions)options;
 
 - (void)saveJsonObject:(id)object forKey:(NSString*)key business:(NSString*)business;
 - (void)saveJsonObject:(id)object forKey:(NSString*)key business:(NSString*)business extension:(APDataCrypt*)extension;
+- (BOOL)saveJsonObject:(id)object forKey:(NSString*)key business:(NSString*)business extension:(APDataCrypt*)extension options:(APDataOptions)options;
 ```
 
 ** setString & stringForKey **
@@ -124,3 +127,21 @@ id obj = [APUserPreferences objectForKey:@"key" business:@"biz"];
 ** 基础类型加密 **
 
 如果想加密存储BOOL，NSInteger，double，long long，可以把它们转成字符串，或放到 NSNumber 里，再调用 setString、setObject 接口即可。
+
+#### 指定 options
+
+```
+typedef NS_OPTIONS (unsigned int, APDataOptions)
+{
+    // 这两个选项不要在接口中使用，是标识数据的加密属性的，请使用extension来传递加密方法
+    APDataOptionDefaultEncrypted    = 1 << 0,       // 这个选项不要传，传了也没效果，统一存储会使用接口里的extension来做加密的判断，而不是options
+    APDataOptionCustomEncrypted     = 1 << 1,       // 这个选项不要传，传了也没效果，统一存储会使用接口里的extension来做加密的判断，而不是options
+    
+    // 标识该数据在清理缓存时可被清除，这里用unsinged int强转1，为因为某些编译选项下，右边的1<<31不能按照unsigned int 来计算，导致赋值失败
+    APDataOptionPurgeable           = (unsigned int)1 << 31,
+};
+```
+
+可以在 setObject/archiveObject/saveJsonObject 三个方法中指定 options。
+
+___APDataOptionPurgeable___ 该数据是可以在数据清理时自动清除。[2.6 数据清理](./clean.md)

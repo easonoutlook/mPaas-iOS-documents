@@ -105,9 +105,19 @@ select 也支持 foreach 字段，用法下文介绍的 insert、update、delete
 ```
 messages 为 MessageModel 数组，那么对于 messages 里的每个 model，都会执行一次 sql 调用，这样就能实现把数组里的元素一次性插入数据库而上层不需要关心循环的调用。底层会把这次操作合并为一个事务而提升效率。
 
-@step
-* 在 insert, update, delete 方法里，可能遇到这种情况：执行一个 DAO 方法，但是需要调用多次 sql update 操作执行多条 sql 语句。比如用户建表后，又要创建一些索引。在函数里<step>包裹的语句，都会当作一次 sql update 被单独执行，底层会把所有操作合并为一次事务。比如上图的 createTable 方法。
+#### step
+```xml
+<upgrade toVersion='3.2'>
+    <step resumable="true">alter table ${T} add column1 text</step>
+    <step resumable="true">alter table ${T} add column2 text</step>
+</upgrade>
+```
+* 在 insert, update, delete, upgrade 方法里，可能遇到这种情况：执行一个 DAO 方法，但是需要调用多次 sql update 操作执行多条 sql 语句。比如用户建表后，又要创建一些索引。在函数里<step>包裹的语句，都会当作一次 sql update 被单独执行，底层会把所有操作合并为一次事务。比如上面的 createTable 方法。
 * 如果一个函数里面有 step 了，那么在 step 外面不允许有文本了。step 内不能再含其它 step。
+
+@resumable
+
+* 当这条 step 语句生成的 sql 执行失败时，是否继续执行下面的语句。无此参数默认为 false。也就是顺序执行 step，当发生失败的情况，整个 DAO 方法认为失败。
 
 #### map
 ```xml

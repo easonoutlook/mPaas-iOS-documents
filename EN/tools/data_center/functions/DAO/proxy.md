@@ -1,7 +1,7 @@
 @cnName 2.3.4 DAO Proxy 
 @priority 4
 
-### 2.3.4 DAO Proxy 
+### 2.3.4 DAO Proxy
 
 Each proxy object of generated DAO objects supports APDAOProtocol. 
 

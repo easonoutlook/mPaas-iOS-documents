@@ -1,4 +1,4 @@
-@cnName 5 Command Line Tool 
+@cnName 5 Command Line Tools
 @priority 5
 
 # 5 Command Line Tools

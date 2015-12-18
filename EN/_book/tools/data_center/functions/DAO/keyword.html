@@ -53,7 +53,7 @@
         data-chapter-title="Keywords"
         data-filepath="tools/data_center/functions/DAO/keyword.md"
         data-basepath="../../../.."
-        data-revision="Wed Dec 02 2015 11:24:01 GMT+0800 (CST)"
+        data-revision="Fri Dec 18 2015 14:12:26 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -1473,10 +1473,19 @@ The SELECT method also supports &quot;foreach&quot; field and its usage is simil
 <pre><code class="lang-C">- (<span class="hljs-keyword">void</span>)addMessages:(NSArray*)messages;
 </code></pre>
 <p>The &#x201C;messages&#x201D; is a MessageModel array. For every model in the messages, an SQL call will be executed so that elements in the array will be inserted to the database in one shot while the upper layer does not need to care about the loop call.  The underlying layer will merge the operation into one transaction to improve efficiency. </p>
-<p>@step</p>
+<h4 id="step">step</h4>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">upgrade</span> <span class="hljs-attribute">toVersion</span>=<span class="hljs-value">&apos;3.2&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">step</span> <span class="hljs-attribute">resumable</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>alter table ${T} add column1 text<span class="hljs-tag">&lt;/<span class="hljs-title">step</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">step</span> <span class="hljs-attribute">resumable</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>alter table ${T} add column2 text<span class="hljs-tag">&lt;/<span class="hljs-title">step</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">upgrade</span>&gt;</span>
+</code></pre>
 <ul>
-<li>In INSERT, UPDATE and DELETE methods, you may run into such a circumstance: To execute a DAO method, the SQL update operation is called for multiple times to execute multiple SQL statements.  For example, after a table is created, the user wants to create some indexes.  The statement between <step> in the function will be executed independently as one SQL update operation, and the underlying layer will merge all the operations into one transaction,  such as the createTable method in the figure above. </step></li>
+<li>In INSERT, UPDATE, DELETE and UPGRADE methods, you may run into such a circumstance: To execute a DAO method, the SQL update operation is called for multiple times to execute multiple SQL statements.  For example, after a table is created, the user wants to create some indexes.  The statement between <step> in the function will be executed independently as one SQL update operation, and the underlying layer will merge all the operations into one transaction,  such as the createTable method in the figure above. </step></li>
 <li>If the step clause exists in a function, no texts are allowed outside the step.  The step cannot contain another step. </li>
+</ul>
+<p>@resumable</p>
+<ul>
+<li>Indicates whether to continue executing the following steps if this one fails. Default is false, so that when executing sequentially, when error occurs in this step, the whole DAO method returns failure.</li>
 </ul>
 <h4 id="map">map</h4>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">map</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;messageModelMap&quot;</span> <span class="hljs-attribute">result</span>=<span class="hljs-value">&quot;MessageModel&quot;</span>&gt;</span>

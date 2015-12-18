@@ -64,6 +64,7 @@ This is the summary of mPaaS iOS Documents e-book.
                 * [APCustomStorage](tools/data_center/functions/custom_storage/summary.md)
                 * [APAsyncFileArrayService](tools/data_center/functions/custom_storage/APAsyncFileArrayService.md)
                 * [APObjectArrayService](tools/data_center/functions/custom_storage/APObjectArrayService.md)
+            * [Sandbox cache cleaning](tools/data_center/functions/clean.md)
         * [FAQs](tools/data_center/faq.md)
     * [Audio Recording and Playback](tools/audio.md)
     * [Sharing Component](tools/share.md)
