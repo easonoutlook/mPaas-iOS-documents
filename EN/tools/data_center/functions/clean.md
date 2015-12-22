@@ -1,4 +1,4 @@
-@cnName 2.6 数据清理
+@cnName 2.6 Sandbox cache cleaning
 @priority 6
 
-# 2.6 数据清理
+# 2.6 Sandbox cache cleaning
